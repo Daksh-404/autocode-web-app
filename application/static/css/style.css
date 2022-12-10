@@ -36,7 +36,8 @@
     border: 1px solid #999;
     display: block;
     padding: 10px;
-    overflow: auto;
+    overflow-y:hidden;
+    
 }
 .image-area::before {
     color: #fff;
