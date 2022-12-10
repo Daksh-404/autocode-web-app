@@ -20,14 +20,25 @@
     max-width: 25%;
     height: auto;
 }
+
+#code {
+    color: white;
+}
+
 .image-area {
     border: 2px dashed rgba(255, 255, 255, 0.7);
     padding: 1rem;
     position: relative;
 }
 
+.code-area {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 10px;
+    overflow: auto;
+}
 .image-area::before {
-    content: 'Uploaded image result';
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
