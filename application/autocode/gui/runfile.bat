@@ -1,0 +1,1 @@
+python Predict.py bin Code-Automaton C:/Users/hp/Desktop/autocode-web-app/application/autocode/gui/0E172E7D-AEB2-4C5D-9F78-DE2168678986.png output greedy
