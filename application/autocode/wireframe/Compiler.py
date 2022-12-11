@@ -4,7 +4,7 @@ from __future__ import absolute_import
 import os
 import json
 
-from Node import *
+from autocode.wireframe.Node import *
 
 BASE_DIR_NAME = './'
 DEFAULT_DSL_MAPPING_FILEPATH = "{}styles/default-dsl-mapping.json".format(BASE_DIR_NAME)

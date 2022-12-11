@@ -2,11 +2,11 @@ from email import generator
 from tabnanny import verbose
 from keras.layers import *
 from keras.models import *
-from Config import *
+from autocode.gui.Config import *
 from keras import *
 from keras.optimizers import *
 from keras.optimizers import Adam
-from AModel import *
+from autocode.gui.AModel import *
 from keras.utils import plot_model
 
 class AutoCode(AModel):

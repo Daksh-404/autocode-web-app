@@ -4,8 +4,8 @@ from __future__ import print_function
 import sys
 
 from os.path import basename
-from compiler.classes.Utils import *
-from compiler.classes.Compiler import *
+from autocode.wireframe.compiler.classes.Utils import *
+from autocode.wireframe.compiler.classes.Compiler import *
 
 if __name__ == "__main__":
     argv = sys.argv[1:]

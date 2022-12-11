@@ -1,6 +1,6 @@
-from Vocabulary import *
-from BeamSearch import *
-from Utils import *
+from autocode.gui.Vocabulary import *
+from autocode.gui.BeamSearch import *
+from autocode.gui.Utils import *
 
 
 class Sampler:

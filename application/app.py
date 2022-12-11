@@ -50,7 +50,8 @@ def index():
 def gui_to_code():  
     img_path = request.args['img_path']
     img_name = img_path.split("/")[-1:][0]
-    final_img_path = "static/uploads/" + img_name   
+    final_img_path = "static/" + img_name  
+    final_img_path = final_img_path.replace("\\",'/') 
     code = predict_gui(img_path)
     return render_template('code.html', img_path=final_img_path, code=code)
 
@@ -59,7 +60,8 @@ def gui_to_code():
 def wireframe_to_code():
     img_path = request.args['img_path']
     img_name = img_path.split("/")[-1:][0]
-    final_img_path = "static/uploads/" + img_name   
+    final_img_path = "static/" + img_name  
+    final_img_path = final_img_path.replace("\\",'/') 
     code = predict_wireframe(img_path)
     return render_template('code.html', img_path=final_img_path, code=code)
     

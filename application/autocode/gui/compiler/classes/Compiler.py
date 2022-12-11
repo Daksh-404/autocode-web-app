@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import json
-from autocode.wireframe.compiler.classes.Node import *
+from autocode.gui.compiler.classes.Node import *
 
 
 class Compiler:

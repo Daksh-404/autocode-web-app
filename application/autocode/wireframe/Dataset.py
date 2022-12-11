@@ -10,9 +10,9 @@ from keras.preprocessing.text import Tokenizer, one_hot
 from keras_preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
 
-from ImagePreprocessor import *
+from autocode.wireframe.ImagePreprocessor import *
 
-VOCAB_FILE              = './vocabulary.vocab'
+VOCAB_FILE              = 'autocode/wireframe/vocabulary.vocab'
 TRAINING_SET_NAME       = "training_set"
 VALIDATION_SET_NAME     = "validation_set"
 BATCH_SIZE              = 64

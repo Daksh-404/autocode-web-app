@@ -3,9 +3,9 @@ from __future__ import print_function
 import sys
 
 from os.path import basename
-from autocode.wireframe.compiler.classes.Utils import *
-from autocode.wireframe.compiler.classes.Compiler import *
-from autocode.wireframe.compiler.formatfile import *
+from autocode.gui.compiler.classes.Utils import *
+from autocode.gui.compiler.classes.Compiler import *
+from autocode.gui.compiler.formatfile import *
 
 if __name__ == "__main__":
     argv = sys.argv[1:]
@@ -20,7 +20,7 @@ if __name__ == "__main__":
 FILL_WITH_RANDOM_TEXT = True
 TEXT_PLACE_HOLDER = "[]"
 
-dsl_path = "autocode/wireframe/compiler/assets/web-dsl-mapping.json"
+dsl_path = "autocode/gui/compiler/assets/web-dsl-mapping.json"
 compiler = Compiler(dsl_path)
 
 
@@ -41,5 +41,4 @@ def compileHTML(input_file):
 
     input_file_path = "{}{}.gui".format(path, file_uid)
     output_file_path = "{}{}.html".format(path, file_uid)
-    formatGUI(input_file_path)
     compiler.compile(input_file_path, output_file_path, rendering_function=render_content_with_text)

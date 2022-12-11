@@ -9,9 +9,9 @@ import numpy as np
 from keras.models import model_from_json
 from keras_preprocessing.sequence import pad_sequences
 
-from Dataset import *
-from ImagePreprocessor import *
-from Evaluator import *
+from autocode.wireframe.Dataset import *
+from autocode.wireframe.ImagePreprocessor import *
+from autocode.wireframe.Evaluator import *
 # from Compiler import *
 
 MAX_LENGTH = 48
