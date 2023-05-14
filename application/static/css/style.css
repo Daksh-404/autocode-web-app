@@ -56,7 +56,6 @@
     position: relative;
 }
 
-
 /*
 *
 * ==========================================
@@ -71,3 +70,53 @@ body {
 }
 
 /*
+*
+* ==========================================
+* FOR TEXT INPUT
+* ==========================================
+*
+*/
+
+.input-field {
+    position: relative;
+    margin-left: 23%;
+}
+.input-field input {
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.input-field input:focus {
+    border: 2px solid #ffcc00;
+}
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: #353842;
+}
+.textCode {
+    margin-right: 6%;
+}
+
+.genCode{
+    color:yellow;
+}

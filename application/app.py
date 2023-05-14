@@ -29,10 +29,16 @@ def index():
     if request.method == 'POST':
         if 'file' not in request.files:
             print('No file attached in request')
+            data = request.form.get('textual')
+            if data != '':
+                return redirect(url_for('.text_to_code', text_input=data))
             return redirect(request.url)
         file = request.files['file']
         if file.filename == '':
             print('No file selected')
+            data = request.form.get('textual')
+            if data != '':
+                return redirect(url_for('.text_to_code', text_input=data))
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
@@ -64,6 +70,15 @@ def wireframe_to_code():
     final_img_path = final_img_path.replace("\\",'/') 
     code = predict_wireframe(img_path)
     return render_template('code.html', img_path=final_img_path, code=code)
+
+# code generated from Wireframe or Sketch
+@app.route('/text', methods=['GET'])
+def text_to_code():
+    input_text = request.args['text_input']
+    #########TEXT TO CODE############
+    code = input_text        #change
+    #################################
+    return render_template('text.html', code=code, data=input_text)
     
 
 if __name__ == "__main__" :
